@@ -1,0 +1,56 @@
+
+<!-- Method -->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <h2 class="title is-2">Shape-Agnostic Mask and Hair Enhancement</h2>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="content/method_shape.png" alt="MY ALT TEXT" style="width: 95%; height: 95%;"/>
+            </div>
+            <div class="item">
+                <h2 class="content has-text-justified">
+                    <p style="font-size: 1.2em;">
+                        The detail of Shape-Agnostic Mask and Hair Enhance- ment Strategy. Given a target image, we first obtain the foreground and cloth masks. Then we apply a Shape-Agnostic Mask Strategy to disrupt 
+                        the segmentation boundaries and obtain an inpainted background. The foreground is randomly scaled and combined with this background to create the augmented image used as train- ing data. Additionally, 
+                        a random long-haired image is selected to extract a hair mask, and a shoulder mask is created using shoul- der keypoints detected by Mediapipe. 
+                        The original cloth, shoulder mask, and hair mask are combined as the SD input.
+                    </p>
+                    <!-- <p style="font-size: 1.2em;">
+                        <ul>
+                            <li><strong>Efficient Hierarchical motion diffusion model</strong> is proposed for <u><i>audio2motion representation</i></u> to generate face and body control signals hierarchically based on input audio, considering both explicit and implicit motion signals for precise facial expressions. Furthermore, fine-grained expression control is introduced to realize different variations in expression intensity, as well as stylistic expression transfer from reference videos, which aims to produce controllable and personalized expressions.</li>
+                            <li><strong>Hybrid control fusion generative model</strong> is designed for <u><i>upper-body image generation</i></u>, which utilizes explicit landmarks for direct and editable facial expression generation, while implicit offsets based on explicit signals are introduced to capture facial variations on diverse avatar styles. We also inject explicit hand controls for more accurate and realistic hand textures and movements. Additionally, a <i><u>face refinement</i></u> module is employed to enhance facial realism ensuring highly expressive and lifelike portrait videos.</li>
+                            <li><strong>Extensible and real-time generation framework</strong> is constructed for interactive video chat application, which can adapt to various scenarios through flexible sub-module combinations, supporting tasks ranging from head-driven animation to upper-body generation with hand gestures. Besides, we establish an efficient streaming inference pipeline that achieves 30fps at a resolution of maximum 512 × 768 on 4090 GPU, ensuring smooth and immersive experiences in real-time video chat.</li>
+                        </ul>
+                    </p> -->
+                </h2>
+                <div class="item">
+                </div>
+            </div>
+</section>
+
+<!-- Method -->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <h2 class="title is-2">Expression-Aware Landmark Retargeting</h2>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="content/method_expression_v2.png" alt="MY ALT TEXT" style="width: 95%; height: 95%;"/>
+            </div>
+            <div class="item">
+                <h2 class="content has-text-justified">
+                    <p style="font-size: 1.2em;">
+                        The detail of Expression-Aware Landmark Retargeting. The Neu-Exp module uses a 3DMM template to neutralize the ex- pression in the input image, outputting neutral landmarks. For ex- pression transfer, we select a nearly neutral frame from the drive sequence and process it with the Neu-Exp module to obtain Neu- tral drive landmarks. Then we use scale-aware retargeting to gen- erate aligned landmarks.
+                    </p>
+                    <!-- <p style="font-size: 1.2em;">
+                        <ul>
+                            <li><strong>Efficient Hierarchical motion diffusion model</strong> is proposed for <u><i>audio2motion representation</i></u> to generate face and body control signals hierarchically based on input audio, considering both explicit and implicit motion signals for precise facial expressions. Furthermore, fine-grained expression control is introduced to realize different variations in expression intensity, as well as stylistic expression transfer from reference videos, which aims to produce controllable and personalized expressions.</li>
+                            <li><strong>Hybrid control fusion generative model</strong> is designed for <u><i>upper-body image generation</i></u>, which utilizes explicit landmarks for direct and editable facial expression generation, while implicit offsets based on explicit signals are introduced to capture facial variations on diverse avatar styles. We also inject explicit hand controls for more accurate and realistic hand textures and movements. Additionally, a <i><u>face refinement</i></u> module is employed to enhance facial realism ensuring highly expressive and lifelike portrait videos.</li>
+                            <li><strong>Extensible and real-time generation framework</strong> is constructed for interactive video chat application, which can adapt to various scenarios through flexible sub-module combinations, supporting tasks ranging from head-driven animation to upper-body generation with hand gestures. Besides, we establish an efficient streaming inference pipeline that achieves 30fps at a resolution of maximum 512 × 768 on 4090 GPU, ensuring smooth and immersive experiences in real-time video chat.</li>
+                        </ul>
+                    </p> -->
+                </h2>
+                <div class="item">
+                </div>
+            </div>
+</section>
+

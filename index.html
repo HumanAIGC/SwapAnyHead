@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="Controllable and Expressive One-Shot Video Head Swapping">
+    <meta property="og:title" content="Controllable and Expressive One-Shot Video Head Swapping"/>
+    <meta property="og:description"
+          content="Controllable and Expressive One-Shot Video Head Swapping."/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/video_t1.png"/>
+    <meta property="og:image:width" content="2412"/>
+    <meta property="og:image:height" content="1394"/>
+
+
+    <meta name="twitter:title" content="SwapAnyHead">
+    <meta name="twitter:description"
+          content="Controllable and Expressive One-Shot Video Head Swapping.">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/video_t1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Image-to-Video">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Controllable and Expressive One-Shot Video Head Swapping</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+            <a class="navbar-item" href=https://github.com/HumanAIGC>
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More Research
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="https://humanaigc.github.io/emote-portrait-alive-2/">
+                        EMO2
+                    </a>
+                    <a class="navbar-item" href="https://humanaigc.github.io/animate-anyone-2/">
+                        AnimateAnyone2
+                    </a>
+                    <a class="navbar-item" href="https://humanaigc.github.io/chat-anyone/">
+                        ChatAnyone
+                    </a>
+                    <a class="navbar-item" href="https://humanaigc.github.io/omnitalker/">
+                        Omnitalker
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Controllable and Expressive One-Shot Video Head Swapping</h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <span class="author-block">
+                <a href="https://dblp.org/pid/189/3461.html" target="_blank">Chaonan ji</a>,</span>
+                        <span class="author-block">
+                <a href="https://dblp.org/pid/183/0937.html" target="_blank">Jinwei Qi</a>,</span>
+                        <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=QTgxKmkAAAAJ" target="_blank">Peng Zhang</a>,</span>
+                        <span class="author-block">
+                <a href="https://dblp.org/pid/11/4046.html" target="_blank">Bang Zhang</a>,</span>
+                        <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=FJwtMf0AAAAJ&hl=zh-CN" target="_blank">Liefeng Bo</a>
+                        </span>
+                    </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">Tongyi Lab, Alibaba Group</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+<!--                <span class="link-block">-->
+<!--                  <a href="https://github.com/HumanAIGC/EMO" target="_blank"-->
+<!--                     class="external-link button is-normal is-rounded is-dark">-->
+<!--                    <span class="icon">-->
+<!--                      <i class="fab fa-github"></i>-->
+<!--                    </span>-->
+<!--                    <span>GitHub</span>-->
+<!--                  </a>-->
+<!--                </span>-->
+                            <span class="link-block">
+                  <a href="" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <!-- <h2 class="title is-3">Facial Motion Generation</h2> -->
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="content/teaser.png" alt="MY ALT TEXT" style="width: 95%; height: 95%;"/>
+            </div>
+            <div class="item">
+                <h2 class="content has-text-justified">
+                    <p style="font-size: 1.2em;">
+                        Illustration of Video Head Swapping. Given a reference image and video sequence as input, our model can generate high-fidelity head swapping results that accommodate diverse hairstyles, expressions, and identities.
+                    </p>
+                </h2>
+                <div class="item">
+                </div>
+            </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <!--                <div style="display: flex; justify-content: center; align-items: center;">-->
+                <!--                    <img src="content/images/framework/intro.png" alt="MY ALT TEXT" style="width: 80%; height: 80%;"/>-->
+                <!--                </div>-->
+                <div class="content has-text-justified">
+                    <p style="font-size: 1.2em;">
+                        In this paper, we propose a novel diffusion-based multi-condition controllable framework for video head swapping, which seamlessly transplant a human head from 
+                        a static image into a dynamic video, while preserving the original body and background of target video, and further allowing to tweak head expressions and movements during swapping as needed. Existing face-swapping methods mainly focus on 
+                        localized facial replacement neglecting holistic head morphology, while head-swapping approaches struggling with hairstyle diversity and complex backgrounds, 
+                        and none of these methods allow users to modify the transplanted head expressions after swapping. To tackle these challenges, our method incorporates several innovative strategies through 
+                        a unified latent diffusion paradigm. 1) Identity-preserving context fusion: We propose a shape-agnostic mask strategy to explicitly disentangle foreground head identity features from background/body 
+                        contexts, combining hair enhancement strategy to achieve robust holistic head identity preservation across diverse hair types and complex backgrounds. 2) Expression-aware landmark retargeting and editing: 
+                        We propose a disentangled 3DMM-driven retargeting module that decouples identity, expression, and head poses, minimizing the impact of original expressions in input images and supporting expression editing. 
+                        While a scale-aware retargeting strategy is further employed to minimize cross-identity expression distortion for higher transfer precision. Experimental results demonstrate that our method excels in seamless 
+                        background integration while preserving the identity of the source portrait, as well as showcasing superior expression transfer capabilities applicable to both real and virtual characters.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--                                            <video class="video-player" poster="" id="tree1" controls>-->
+        <!--                    <source src="content/video/main_page.mp4" type="video/mp4">-->
+        <!--                </video>-->
+    </div>
+</section>
+
+<!-- Method -->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <h2 class="title is-2">Method</h2>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="content/pipline.png" alt="MY ALT TEXT" style="width: 95%; height: 95%;"/>
+            </div>
+            <div class="item">
+                <h2 class="content has-text-justified">
+                    <p style="font-size: 1.2em;">
+                        The framwork of our method. During the training stage, we begin by preprocessing the input video to 
+                        obtain the inpainted background and detect 3D landmarks uiltizing Mediapipe. Both the inpainted background and the 3D landmarks serve 
+                        as conditional inputs, and a frame is randomly selected as the reference image. We reconstruct the image from output noise and introducing 
+                        additional ID losses in pixel level to enhance identity consistency.
+                    </p>
+                    <!-- <p style="font-size: 1.2em;">
+                        <ul>
+                            <li><strong>Efficient Hierarchical motion diffusion model</strong> is proposed for <u><i>audio2motion representation</i></u> to generate face and body control signals hierarchically based on input audio, considering both explicit and implicit motion signals for precise facial expressions. Furthermore, fine-grained expression control is introduced to realize different variations in expression intensity, as well as stylistic expression transfer from reference videos, which aims to produce controllable and personalized expressions.</li>
+                            <li><strong>Hybrid control fusion generative model</strong> is designed for <u><i>upper-body image generation</i></u>, which utilizes explicit landmarks for direct and editable facial expression generation, while implicit offsets based on explicit signals are introduced to capture facial variations on diverse avatar styles. We also inject explicit hand controls for more accurate and realistic hand textures and movements. Additionally, a <i><u>face refinement</i></u> module is employed to enhance facial realism ensuring highly expressive and lifelike portrait videos.</li>
+                            <li><strong>Extensible and real-time generation framework</strong> is constructed for interactive video chat application, which can adapt to various scenarios through flexible sub-module combinations, supporting tasks ranging from head-driven animation to upper-body generation with hand gestures. Besides, we establish an efficient streaming inference pipeline that achieves 30fps at a resolution of maximum 512 × 768 on 4090 GPU, ensuring smooth and immersive experiences in real-time video chat.</li>
+                        </ul>
+                    </p> -->
+                </h2>
+                <div class="item">
+                </div>
+            </div>
+</section>
+
+
+
+
+<!-- End Method -->
+
+<style>
+    .gifImage:hover {
+        opacity: 0.8;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+    }
+
+    .paused {
+        animation-play-state: paused;
+    }
+
+</style>
+
+
+<head>
+    <title>place gif</title>
+    <style>
+        .gif-container {
+            display: flex;
+        }
+
+        .gif {
+            width: 660px; /* 设置 GIF 的宽度 */
+            height: 400px; /* 设置 GIF 的高度 */
+        }
+    </style>
+</head>
+
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-2">Results</h2>
+            <br></br>
+            <h2 class="content has-text-justified">
+                <p style="font-size: 1.4em;"></p>
+            </h2>
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4">Video Head Swapping </h3>
+            </div>
+            <!-- <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+                <p style="font-size: 1.2em;">
+                    We can generate highly expressive audio-driven upper-body digital human videos, supporting different scenarios with or without hands.
+                </p>
+            </div> -->
+
+            <style>
+                /* 视频容器的样式 */
+                .video-container {
+                    display: flex;
+                    justify-content: center; /* 确保视频在容器中居中显示 */
+                    align-items: center;
+                    flex-wrap: wrap; /* 当屏幕宽度不足时，让视频换行 */
+                    margin-bottom: 20px; /* 为容器底部增加间距 */
+                }
+        
+                /* 视频项的样式 */
+                .video-item {
+                    margin: 0 10px; /* 为每个视频项左右增加一些间距 */
+                    flex: 0 0 48%; /* 每个视频项占容器宽度的48%，剩余的4%用于间距 */
+                    max-width: 48%; /* 设置视频项的最大宽度 */
+                }
+        
+                /* 视频播放器的样式 */
+                .video-player {
+                    width: 100%; /* 确保视频宽度充满容器 */
+                    height: auto; /* 自动调整视频高度以保持宽高比 */
+                }
+        
+                /* 响应式设计: 在小屏幕上让视频项占据整个容器宽度 */
+                @media (max-width: 600px) {
+                    .video-item {
+                        flex: 1 0 100%; /* 每个视频项占容器宽度的100% */
+                        max-width: 100%; /* 设置视频项的最大宽度为100% */
+                        margin: 10px 0; /* 为每个视频项上下增加一些间距 */
+                    }
+                }
+            </style>
+
+            <div class="video-container">
+                <div class="video-item">
+                    <div class="column">
+                        <video class="video-player" poster="" id="tree1" controls>
+                            <source src="content/man_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="column">
+                        <video class="video-player" poster="" id="tree2" controls>
+                            <source src="content/longhair_2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4">More Results</h3>
+            </div> -->
+
+            <div class="video-container">
+                <div class="video-item">
+                    <div class="column">
+                        <video class="video-player" poster="" id="tree1" controls>
+                            <source src="content/comic_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="column">
+                        <video class="video-player" poster="" id="tree2" controls>
+                            <source src="content/comic_2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-item">
+                    <div class="column">
+                        <video class="video-player" poster="" id="tree1" controls>
+                            <source src="content/woman_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="column">
+                        <video class="video-player" poster="" id="tree2" controls>
+                            <source src="content/nice_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-item">
+                    <div class="column">
+                        <video class="video-player" poster="" id="tree1" controls>
+                            <source src="content/comicman_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="column">
+                        <video class="video-player" poster="" id="tree2" controls>
+                            <source src="content/joker_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            
+            <style>
+                /* 单个视频容器的样式 */
+                .single-video-container {
+                    display: flex;
+                    justify-content: center; /* 使视频居中 */
+                    align-items: center;
+                    margin-bottom: 20px; /* 为容器底部增加间距 */
+                    width: 100%; /* 视频容器占据页面宽度 */
+                }
+        
+                /* 单个视频项的样式 */
+                .single-video-item {
+                    width: 100%; /* 视频项占据整个容器宽度 */
+                    max-width: 1000px; /* 最大宽度为1000px */
+                }
+        
+                /* 单个视频播放器的样式 */
+                .single-video-player {
+                    width: 100%; /* 确保视频宽度充满视频项 */
+                    height: auto; /* 自动调整视频高度以保持宽高比 */
+                }
+            </style>
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Film Clips </h3>
+            </div>
+            <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+            </div>
+            <div class="single-video-container">
+                <div class="single-video-item">
+                    <video class="single-video-player" poster="" id="tree2" controls>
+                        <source src="content/smell_2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Expression Control </h3>
+            </div>
+            <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+            </div>
+            <div class="single-video-container">
+                <div class="single-video-item">
+                    <video class="single-video-player" poster="" id="tree2" controls>
+                        <source src="content/expression_2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            
+
+            <br></br>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content" style="text-align: center;">
+                    <p>
+                        This project is intended solely for academic research and effect demonstration.
+                    </p>
+
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                            target="_blank">Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                                                                                       target="_blank">Nerfies</a> project
+                        page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="static/js/script.js"></script>
+<script>
+    // 获取所有视频元素
+    var videos = document.querySelectorAll('video');
+
+    // 为每个视频添加播放事件监听器
+    videos.forEach(function (video) {
+        video.addEventListener('play', function () {
+            // 当任何一个视频开始播放时，暂停其他所有视频
+            videos.forEach(function (otherVideo) {
+                if (otherVideo !== video) {
+                    otherVideo.pause();
+                }
+            });
+        }, false);
+    });
+</script>
+
+<script>
+    new BeforeAfter({
+        id: '#example1'
+    });
+    new BeforeAfter({
+        id: '#example2'
+    });
+    new BeforeAfter({
+        id: '#example3'
+    });
+    new BeforeAfter({
+        id: '#example4'
+    });
+    new BeforeAfter({
+        id: '#example6'
+    });
+    new BeforeAfter({
+        id: '#example7'
+    });
+
+</script>
+
+<script>
+    var gifImage = document.getElementById('gifImage');
+    var isPaused = false;
+
+    gifImage.addEventListener('mouseenter', function () {
+        gifImage.src = gifImage.src;
+        isPaused = true;
+    });
+
+    gifImage.addEventListener('mouseleave', function () {
+        if (isPaused) {
+            gifImage.src = gifImage.src;
+            isPaused = false;
+        }
+    });
+</script>
+
+<script>
+    bulmaCarousel.attach('#results-carousel11', {
+        slidesToScroll: 1,
+        slidesToShow: 2,
+        infinite: true,
+        autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel22', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+        autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel44', {
+        slidesToScroll: 1,
+        slidesToShow: 2,
+        infinite: false,
+        autoplay: false,
+    });
+</script>
+
+<script>
+    document.getElementById('gifImage3').src = 'content/gifs/Item.gif';
+    document.getElementById('gifImage1').src = 'content/gifs/s1.gif';
+    document.getElementById('gifImage2').src = 'content/gifs/s2.gif';
+
+    // 图片资源路径
+    const images = [
+        'content/teaser/t3.gif',
+        'content/teaser/t4.gif',
+        'content/teaser/t1.gif',
+        'content/teaser/t2.gif'
+    ];
+
+    // 获取要插入图片的div
+    const group1 = document.getElementById('group1');
+    const group2 = document.getElementById('group2');
+
+    // 创建并插入前两张图片
+    for (let i = 0; i < 2; i++) {
+        const img = document.createElement('img');
+        img.src = images[i];
+        img.loading = 'lazy';
+        img.alt = '图片' + (i + 1);
+        group1.appendChild(img);
+    }
+
+    // 创建并插入后两张图片
+    for (let i = 2; i < images.length; i++) {
+        const img = document.createElement('img');
+        img.src = images[i];
+        img.loading = 'lazy';
+        img.alt = '图片' + (i + 1);
+        group2.appendChild(img);
+    }
+
+</script>
+
+
+</body>
+
+
+</html>
