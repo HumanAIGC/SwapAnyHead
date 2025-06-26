@@ -6,7 +6,8 @@
 [Bang Zhang](https://dblp.org/pid/11/4046.html),
 [Liefeng Bo](https://scholar.google.com/citations?user=FJwtMf0AAAAJ&hl=zh-CN)
 
-Tongyi Lab, Alibaba Group
+Tongyi Lab, Alibaba Groupd
+**News**: this paper has been accepted by **ICCV 2025**
 
 <!-- ![Teaser Image](content/inference_pipeline.png "Teaser") -->
 
